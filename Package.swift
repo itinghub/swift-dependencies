@@ -23,9 +23,9 @@ let package = Package(
   ],
   dependencies: [
     .package(url: "https://github.com/apple/swift-syntax", "509.0.0"..<"601.0.0"),
-    .package(url: "https://github.com/pointfreeco/combine-schedulers", from: "1.0.0"),
-    .package(url: "https://github.com/pointfreeco/swift-clocks", from: "1.0.0"),
-    .package(url: "https://github.com/pointfreeco/swift-concurrency-extras", from: "1.0.0"),
+//    .package(url: "https://github.com/pointfreeco/combine-schedulers", from: "1.0.0"),
+//    .package(url: "https://github.com/pointfreeco/swift-clocks", from: "1.0.0"),
+//    .package(url: "https://github.com/pointfreeco/swift-concurrency-extras", from: "1.0.0"),
     .package(url: "https://github.com/pointfreeco/xctest-dynamic-overlay", from: "1.1.0"),
   ],
   targets: [
@@ -38,9 +38,9 @@ let package = Package(
     .target(
       name: "Dependencies",
       dependencies: [
-        .product(name: "Clocks", package: "swift-clocks"),
-        .product(name: "CombineSchedulers", package: "combine-schedulers"),
-        .product(name: "ConcurrencyExtras", package: "swift-concurrency-extras"),
+//        .product(name: "Clocks", package: "swift-clocks"),
+//        .product(name: "CombineSchedulers", package: "combine-schedulers"),
+//        .product(name: "ConcurrencyExtras", package: "swift-concurrency-extras"),
         .product(name: "XCTestDynamicOverlay", package: "xctest-dynamic-overlay"),
       ]
     ),
